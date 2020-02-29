@@ -13,6 +13,10 @@ server.use(bodyParser.urlencoded({ extended: true }))
 //considera o formato json no corpo da requisição
 server.use(bodyParser.json()); 
 
+server.get('/', function (req, res) {
+    res.send('Hello World!');
+});
+
 server.listen(port, function () {
     console.log(`servidor no ar, na porta ${port}`);
 });
