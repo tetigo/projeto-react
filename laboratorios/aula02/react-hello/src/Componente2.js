@@ -1,5 +1,5 @@
 import React, {useState, useEffect } from 'react';
-import {Lista} from './Lista'
+import {Lista} from './Lista';
 
 export const Componente2 = _ => {
     const [nome, setNome] = useState('');
