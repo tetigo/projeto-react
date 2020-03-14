@@ -3,7 +3,7 @@ import {Lista} from './Lista';
 
 export class Componente1 extends React.Component {
 
-    initialState = {
+    estadoInicial = {
         nome: '',
         idade: '',
         email: '',
@@ -12,10 +12,10 @@ export class Componente1 extends React.Component {
         dataNascimento: '',
         categorias: ['INFORMATICA', 'REDES', 'ADM']
     }
-    state = this.initialState
+    state = this.estadoInicial
 
     limpar() {
-        this.setState(this.initialState);
+        this.setState(this.estadoInicial);
     }
 
     componentDidMount() {

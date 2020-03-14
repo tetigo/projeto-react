@@ -8,6 +8,10 @@ export const Componente2 = _ => {
     useEffect(() => {
         setTimeout(() => setNome('Rafael'), 3000);
         setTimeout(_ => setNome(''), 10000);
+
+        return (() =>{
+            
+        })
     }, []);
 
     const renderLista = () =>{
