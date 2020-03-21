@@ -7,6 +7,18 @@ export const ListaCursos = props => {
             <tr key={curso._id}>
             <td>{curso.codigo}</td>
             <td>{curso.descricao}</td>
+            <td>
+            <button className="btn btn-success"
+                onClick={() => props.editarCurso(curso)}>
+                    <i className="fa fa-check"></i>
+            </button>
+            </td>
+            <td>
+                <button className="btn btn-danger"
+            onClick={() => props.removerCurso(curso)}>
+                    <i className="fa fa-trash-o"></i>
+                </button>
+            </td>
             </tr>
         ));
     }
@@ -19,6 +31,7 @@ export const ListaCursos = props => {
                     <tr>
                         <th>Código</th>
                         <th>Descrição</th>
+                        <th>Apagar</th>
                     </tr>
                 </thead>
                 <tbody>
