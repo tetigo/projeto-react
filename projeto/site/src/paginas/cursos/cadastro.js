@@ -120,7 +120,7 @@ export class CadastroCursos extends React.Component {
             <div className="row border-bottom">
                 <div className="col-md-6">
                     <FormularioCursos 
-                        _id={this.state.id}
+                        _id={this.state._id}
                         codigo={this.state.codigo}
                         descricao={this.state.descricao}
                         cargaHoraria={this.state.cargaHoraria}
