@@ -68,7 +68,7 @@ export const FormularioCursos = props => (
                 <button
                     className="btn btn-primary ml-3 mb-3">
                     Adicionar
- </button>
+                </button>
             </div>
         </form>
     </div>

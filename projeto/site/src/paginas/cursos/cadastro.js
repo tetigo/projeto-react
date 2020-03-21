@@ -20,6 +20,10 @@ export class CadastroCursos extends React.Component {
     state = this.estadoInicial
 
     componentDidMount(){
+        this.listaCursos();
+    }
+
+    listaCursos(){
         axios.get(URL)
         .then(response => {
             this.setState({...this.state, cursos: response.data})
