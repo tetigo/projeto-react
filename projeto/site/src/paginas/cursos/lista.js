@@ -31,6 +31,7 @@ export const ListaCursos = props => {
                     <tr>
                         <th>Código</th>
                         <th>Descrição</th>
+                        <th>Editar</th>
                         <th>Apagar</th>
                     </tr>
                 </thead>
